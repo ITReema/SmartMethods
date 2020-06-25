@@ -52,5 +52,6 @@ VALUES (1,'Forward','Backward','Right','Left','Stop'");
 
 ```
 8. Open your browser and go to ```http://localhost/control_panel/```
-
+<p align="center">
 ![](https://user-images.githubusercontent.com/27751735/85617141-717b1580-b667-11ea-9d7c-c76fe3ce198d.gif)
+ </P
