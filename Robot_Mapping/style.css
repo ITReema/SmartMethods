@@ -1,0 +1,100 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding: 2em;
+}
+
+.container {
+  max-width: 1170px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1em;
+}
+
+.page-title {
+  font-size: 3em;
+  margin-bottom: 30px;
+  color: #14213D;
+}
+
+.page-title span {
+  color: #FCA311;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  box-shadow: 0 0 20px 0 rgba(72,94,116,0.7);
+
+}
+
+.wrapper > * {
+  padding: 2em;
+}
+.direction {
+  background: #14213D;
+}
+
+.direction h3 {
+  text-align: left;
+  color: #E5E5E5;
+  margin-bottom: 20px;
+  margin-top: 5px;
+}
+
+.direction input {
+  display: inline-block;
+  margin: 5px;
+  width: 107px;
+  padding-left: 20px;
+
+}
+
+.direction button {
+  width: 110px;
+  font-size: 16px;
+  background-color: #FCA311;
+  color: #000000;
+  margin: 5px;
+  display: inline-block;
+  float: left;
+}
+
+.direction button:hover {
+  background-color: #E5E5E5;
+  color: #14213D;
+}
+
+table {
+  margin: auto;
+}
+
+table, th, td {
+  border-collapse: collapse;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  border-bottom: 1px solid #fff;
+  width: 150px;    
+}
+
+th {
+  height: 50px;
+}
+
+.draw {
+  background: #E5E5E5;
+}
+
+canvas {
+  margin-top: 20px;
+  margin-right: 10px;
+  margin-left: 10px;
+  background-color: white;
+}
+#DemoCanvas {
+  display: none;
+ }
+
+ #DemoCanvas.show{
+  display:block; 
+}
