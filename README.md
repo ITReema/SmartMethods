@@ -10,3 +10,7 @@ Connect Robot Control panel with database using php, and MySQL.
 
 * **Task 3:** [Robot Control Panel on Mobile](https://github.com/ITReema/SmartMethods/tree/master/WebView)</br>
 Web view a Robot Control panel on mobile.
+
+
+* **Task 4:** [Robot Mapping]()</br>
+Design Robot Control panel to Robot Mapping with database.
