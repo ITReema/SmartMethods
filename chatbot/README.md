@@ -15,3 +15,16 @@ Build simple chatbot with App Inventor.
   <img width="300" alt="Screen" src="https://user-images.githubusercontent.com/27751735/86601373-e58fb480-bfa9-11ea-80a5-7e4ea4ecdad4.jpg")
   11ea-9b9c-8849b3bfba7a.png">
  </p>
+                             
+## Chatbot Questions
+* Hello/Hi
+* How are you?
+* Who built you/Who made you?
+* What is your name?
+* Goodbye/bye
+* Thank you/Thanks
+* Good morning/evening/afternoon/night
+* How many language can you speak?
+* Who are you?
+* Are you real?
+* Are you still there?
