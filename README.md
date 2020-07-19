@@ -17,5 +17,5 @@ Design Robot Control panel to Robot Mapping with database.
 * **Task 5:** [Chatbot](https://github.com/ITReema/SmartMethods/tree/master/chatbot)</br>
 Build simple chatbot with App Inventor.
 
-* **Task 6:** [Count MAC Address]()</br>
+* **Task 6:** [Count MAC Address](https://github.com/ITReema/SmartMethods/tree/master/Safe%20Distance)</br>
 App to count the number of MAC addresses.
