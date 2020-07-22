@@ -1,0 +1,492 @@
+{
+  "intents": [
+    {
+      "intent": "book_meeting",
+      "examples": [
+        {
+          "text": "How to book an meeting"
+        },
+        {
+          "text": "can I book an meeting"
+        },
+        {
+          "text": "book an meeting"
+        },
+        {
+          "text": "I want a book meeting"
+        },
+        {
+          "text": "when can I book an meeting"
+        }
+      ],
+      "description": "user wants to book meeting"
+    },
+    {
+      "intent": "locations",
+      "examples": [
+        {
+          "text": "Where is your office?"
+        },
+        {
+          "text": "Where are you located?"
+        },
+        {
+          "text": "Where is?"
+        },
+        {
+          "text": "Can you help me find locations"
+        },
+        {
+          "text": "I want to know about a company"
+        },
+        {
+          "text": "Looking for a location"
+        }
+      ],
+      "description": "user wants to know the address of the company"
+    },
+    {
+      "intent": "hours_of_operation",
+      "examples": [
+        {
+          "text": "what are the hours"
+        },
+        {
+          "text": "when the company open"
+        },
+        {
+          "text": "what time do you open"
+        },
+        {
+          "text": "what can I come in"
+        },
+        {
+          "text": "when do you close"
+        }
+      ],
+      "description": "what time the company open and close"
+    }
+  ],
+  "entities": [
+    {
+      "entity": "locations",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "First Street",
+          "synonyms": [
+            "first",
+            "1st"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Main Street",
+          "synonyms": [
+            "Main"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "sys-date",
+      "values": [],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "sys-time",
+      "values": [],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "sys-number",
+      "values": [],
+      "fuzzy_match": true
+    }
+  ],
+  "metadata": {
+    "api_version": {
+      "major_version": "v2",
+      "minor_version": "2018-11-08"
+    },
+    "from-sample": true
+  },
+  "dialog_nodes": [
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "The First street location is at 123 First"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_1_1595451462487",
+      "conditions": "@locations:(First Street)",
+      "dialog_node": "response_4_1595451487755",
+      "previous_sibling": "node_8_1595451944664"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "The First location at 123b First"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_1_1595451462487",
+      "conditions": "@locations:(First Street)",
+      "dialog_node": "node_8_1595451944664",
+      "previous_sibling": "node_8_1595451869125"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "The Main street location is at 456 Main"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_1_1595451462487",
+      "conditions": "@locations:(Main Street)",
+      "dialog_node": "response_4_1595451571590",
+      "previous_sibling": "response_4_1595451487755"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "which branch? the one on First, or Main?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_1_1595451462487",
+      "conditions": "true",
+      "dialog_node": "response_5_1595451639734",
+      "previous_sibling": "response_4_1595451571590"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "The Main Street location at 456 Main Street"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_1_1595451462487",
+      "conditions": "@locations:(Main Street)",
+      "dialog_node": "node_8_1595451869125"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "which branch did you want to go to? First or Main?"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_4_1595452120512",
+      "event_name": "focus",
+      "dialog_node": "handler_1_1595452120520",
+      "previous_sibling": "handler_3_1595452120520"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_4_1595452120512",
+      "context": {
+        "locations": "@locations"
+      },
+      "conditions": "@locations",
+      "event_name": "input",
+      "dialog_node": "handler_3_1595452120520"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "What time did you want to arrive?"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_7_1595452276702",
+      "event_name": "focus",
+      "dialog_node": "handler_9_1595452276704",
+      "previous_sibling": "handler_1_1595452276704"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_7_1595452276702",
+      "context": {
+        "time": "@sys-time"
+      },
+      "conditions": "@sys-time",
+      "event_name": "input",
+      "dialog_node": "handler_1_1595452276704"
+    },
+    {
+      "type": "slot",
+      "parent": "node_8_1595452087321",
+      "variable": "$date",
+      "dialog_node": "slot_7_1595452216112",
+      "previous_sibling": "slot_4_1595452120512"
+    },
+    {
+      "type": "slot",
+      "parent": "node_8_1595452087321",
+      "variable": "$locations",
+      "dialog_node": "slot_4_1595452120512",
+      "previous_sibling": "handler_1_1595452120219"
+    },
+    {
+      "type": "slot",
+      "parent": "node_8_1595452087321",
+      "variable": "$number",
+      "dialog_node": "slot_4_1595452329659",
+      "previous_sibling": "slot_7_1595452276702"
+    },
+    {
+      "type": "slot",
+      "parent": "node_8_1595452087321",
+      "variable": "$time",
+      "dialog_node": "slot_7_1595452276702",
+      "previous_sibling": "slot_7_1595452216112"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "I need some more info to continue. I will need the location, date, time and number of people."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_8_1595452087321",
+      "event_name": "focus",
+      "dialog_node": "handler_1_1595452120219"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "How many people?"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_4_1595452329659",
+      "event_name": "focus",
+      "dialog_node": "handler_6_1595452329661",
+      "previous_sibling": "handler_5_1595452329661"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_4_1595452329659",
+      "context": {
+        "number": "@sys-number"
+      },
+      "conditions": "@sys-number",
+      "event_name": "input",
+      "dialog_node": "handler_5_1595452329661"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "What day do you want to come in?"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_7_1595452216112",
+      "event_name": "focus",
+      "dialog_node": "handler_5_1595452216115",
+      "previous_sibling": "handler_9_1595452216114"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_7_1595452216112",
+      "context": {
+        "date": "@sys-date"
+      },
+      "conditions": "@sys-date",
+      "event_name": "input",
+      "dialog_node": "handler_9_1595452216114"
+    },
+    {
+      "type": "frame",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Greet, I have a book for $number people on $date at $time at our $locations branch."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "#book_meeting",
+      "dialog_node": "node_8_1595452087321",
+      "previous_sibling": "node_1_1595451462487"
+    },
+    {
+      "type": "standard",
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "conditions": "#locations",
+      "dialog_node": "node_1_1595451462487",
+      "previous_sibling": "node_8_1595451176148"
+    },
+    {
+      "type": "standard",
+      "title": "Hours of Operation",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "We are open from 9:00am until 8:00pm"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "#hours_of_operation",
+      "dialog_node": "node_8_1595451176148",
+      "previous_sibling": "Welcome"
+    },
+    {
+      "type": "standard",
+      "title": "Anything else",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "I didn't understand. You can try rephrasing."
+              },
+              {
+                "text": "Can you reword your statement? I'm not understanding."
+              },
+              {
+                "text": "I didn't get your meaning."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "anything_else",
+      "dialog_node": "Anything else",
+      "previous_sibling": "node_8_1595452087321",
+      "disambiguation_opt_out": true
+    },
+    {
+      "type": "standard",
+      "title": "Welcome",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Hello. How can I help you?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "welcome",
+      "dialog_node": "Welcome"
+    }
+  ],
+  "counterexamples": [
+    {
+      "text": "hi"
+    }
+  ],
+  "system_settings": {
+    "off_topic": {
+      "enabled": true
+    },
+    "disambiguation": {
+      "prompt": "Did you mean:",
+      "enabled": true,
+      "randomize": true,
+      "max_suggestions": 5,
+      "suggestion_text_policy": "title",
+      "none_of_the_above_prompt": "None of the above"
+    },
+    "system_entities": {
+      "enabled": true
+    },
+    "human_agent_assist": {
+      "prompt": "Did you mean:"
+    },
+    "spelling_auto_correct": true
+  },
+  "learning_opt_out": false,
+  "name": "Chatbot",
+  "language": "en",
+  "description": ""
+}
