@@ -23,5 +23,5 @@ App to count the number of MAC addresses.
 * **Task 7:** [IBM Watson Assistant](https://github.com/ITReema/SmartMethods/tree/master/IBM%20Watson%20Assistant)</br>
 Create assistant and export skill as JSON file.
 
-* **Task 8:** [IBM Watson Assistant]()</br>
+* **Task 8:** [Web chat](https://github.com/ITReema/SmartMethods/tree/master/Web%20Chat)</br>
 Integrate Web chat with Website.
