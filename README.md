@@ -21,3 +21,4 @@ Build simple chatbot with App Inventor.
 App to count the number of MAC addresses.
 
 * **Task 7:** [IBM Watson Assistant]()</br>
+Create assistant and export skill as JSON file.
