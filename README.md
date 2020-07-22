@@ -20,5 +20,5 @@ Build simple chatbot with App Inventor.
 * **Task 6:** [Count MAC Address](https://github.com/ITReema/SmartMethods/tree/master/Safe%20Distance)</br>
 App to count the number of MAC addresses.
 
-* **Task 7:** [IBM Watson Assistant]()</br>
+* **Task 7:** [IBM Watson Assistant](https://github.com/ITReema/SmartMethods/tree/master/IBM%20Watson%20Assistant)</br>
 Create assistant and export skill as JSON file.
