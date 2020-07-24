@@ -25,3 +25,7 @@ Create assistant and export skill as JSON file.
 
 * **Task 8:** [Web chat](https://github.com/ITReema/SmartMethods/tree/master/Web%20Chat)</br>
 Integrate Web chat with Website.
+
+* **Task 9:** [Face Recognition]()</br>
+Real time face recognition.
+
