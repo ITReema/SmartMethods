@@ -29,3 +29,6 @@ Integrate Web chat with Website.
 * **Task 9:** [Face Recognition]()</br>
 Real time face recognition.
 
+* **Task 10:** [ROS Installation]()</br>
+Install ROS (Robot Operating System).
+
