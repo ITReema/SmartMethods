@@ -19,6 +19,7 @@ When you start Oracle VM VirtualBox for the first time, a window like the follow
 <p align="center">
     <img width="600"src= "https://user-images.githubusercontent.com/27751735/88479307-d5d71080-cf56-11ea-910d-96c97bd55792.png">
 </p>
+
 > ### Ubuntu
 
 1. Download [Ubuntu](https://ubuntu.com/download/desktop)
@@ -26,10 +27,11 @@ When you start Oracle VM VirtualBox for the first time, a window like the follow
 3. To create Virtual Machine,Click New in the VirtualBox Manager window
 <p align="center">
     <img width="600"src="https://user-images.githubusercontent.com/27751735/88479499-3581eb80-cf58-11ea-9b17-fb8e71c508b3.png">
- </p>
+</p>
 <p align="center">
     <img width="600"src= "https://user-images.githubusercontent.com/27751735/88479748-0d938780-cf5a-11ea-9514-d14a0b81b907.png">
- </p>
+</p>
+ 
 - The **Name** of the VM you choose is shown in the machine list of the VirtualBox Manager window.
 - The **Machine Folder** is the location where VMs are stored on your computer.
 - Operating System **Type**, select the Liunx OS to install.
@@ -40,6 +42,7 @@ When you start Oracle VM VirtualBox for the first time, a window like the follow
 <p align="center">
     <img width="600"src= "https://user-images.githubusercontent.com/27751735/88480647-cf00cb80-cf5f-11ea-855e-c3a3a522c981.png">
 </p>
+
 - Select the **File size** 35 GB.
 - **Hard disk file type** pick VDI (VirtualBox Disk Image).
 - **Storage on physical hard disk** pick Dynamically allocated.
@@ -48,6 +51,7 @@ When you start Oracle VM VirtualBox for the first time, a window like the follow
 <p align="center">
     <img width="600"src= "https://user-images.githubusercontent.com/27751735/88480500-f014ec80-cf5e-11ea-8153-09c4090e4d45.png">
 </p>
+
 - To running Virtual Machine **Ubuntu** 
 - Double-click on the Ubuntu VM in the list in the VirtualBox Manager window. Or click **Start** at the top of the window.
 <p align="center">
@@ -81,9 +85,9 @@ When you start Oracle VM VirtualBox for the first time, a window like the follow
 <p align="center">
     <img width="600"src= "https://user-images.githubusercontent.com/27751735/88481257-f86f2680-cf62-11ea-9285-e3ac1ba9f59d.png">
 </p>
+
 - Installation process.
 - When installation Complete click on  **Restart Now**
-
 
  > ### ROS
 1. Open Terminal
@@ -91,6 +95,7 @@ When you start Oracle VM VirtualBox for the first time, a window like the follow
 <p align="center">
     <img width="600"src= "https://user-images.githubusercontent.com/27751735/88481762-f8bcf100-cf65-11ea-8dc2-8e3473560523.png">
 </p>
+
 3. [ROS Noetic Ninjemys](http://wiki.ros.org/noetic/Installation) is targeted at the Ubuntu 20.04 (Focal) release.
 * Single line ROS Noetic Installation:
 
