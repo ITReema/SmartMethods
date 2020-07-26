@@ -112,3 +112,7 @@ wget -c https://raw.githubusercontent.com/qboticslabs/ros_install_noetic/master/
     <img width="600"src= "https://user-images.githubusercontent.com/27751735/88482225-99141500-cf68-11ea-983d-b74df13cb486.png">
 </p>
 
+# References
+* [VirtualBox User Manual](https://download.virtualbox.org/virtualbox/6.1.12/UserManual.pdf)
+* [How to Install Ubuntu](https://www.youtube.com/watch?v=aJcc-xC6krE)
+* [Quick ROS Noetic Install](https://github.com/qboticslabs/ros_install_noetic)
