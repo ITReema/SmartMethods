@@ -26,9 +26,10 @@ Create assistant and export skill as JSON file.
 * **Task 8:** [Web chat](https://github.com/ITReema/SmartMethods/tree/master/Web%20Chat)</br>
 Integrate Web chat with Website.
 
-* **Task 9:** [Face Recognition]()</br>
+* **Task 9:** [ROS Installation](https://github.com/ITReema/SmartMethods/tree/master/ROS%20Installation)</br>
+Install ROS (Robot Operating System).
+
+* **Task 10:** [Face Recognition]()</br>
 Real time face recognition.
 
-* **Task 10:** [ROS Installation]()</br>
-Install ROS (Robot Operating System).
 
