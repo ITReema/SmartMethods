@@ -30,6 +30,6 @@ Integrate Web chat with Website.
 Install ROS (Robot Operating System).
 
 * **Task 10:** [Face Recognition]()</br>
-Real time face recognition.
+A face recognition script that identifies faces in image.
 
 
