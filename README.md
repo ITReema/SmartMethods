@@ -29,7 +29,7 @@ Integrate Web chat with Website.
 * **Task 9:** [ROS Installation](https://github.com/ITReema/SmartMethods/tree/master/ROS%20Installation)</br>
 Install ROS (Robot Operating System).
 
-* **Task 10:** [Face Recognition]()</br>
+* **Task 10:** [Face Recognition](https://github.com/ITReema/SmartMethods/tree/master/Face%20Recognition)</br>
 A face recognition script that identifies faces in image.
 
 
