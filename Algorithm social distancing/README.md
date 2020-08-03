@@ -3,6 +3,10 @@ Algorithm to create a robot to be placed in the meeting hall, that prevents peop
 
 ## Algorithm idea
 Algorithm to create a robot to be placed in the meeting hall, just 5 people in same place; Otherwise, the robot will send Alarm to user.
+<p align="center">
+  <img width="545" alt="meeting_hall" src="https://user-images.githubusercontent.com/27751735/89232259-be9bc100-d5ef-11ea-9595-032007df18de.png">
+</p>
+
 
 ## Technique 
 * [Bluetooth beacons](https://www.beaconstac.com/what-is-a-bluetooth-beacon)
