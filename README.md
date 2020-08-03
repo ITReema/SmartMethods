@@ -32,4 +32,6 @@ Install ROS (Robot Operating System).
 * **Task 10:** [Face Recognition](https://github.com/ITReema/SmartMethods/tree/master/Face%20Recognition)</br>
 A face recognition script that identifies faces in image.
 
+* **Task 11:** [Algorithm social distancing]()</br>
+Algorithm to create a robot to be placed in the meeting hall, just 5 people in same place; Otherwise, the robot will send Alarm to user.
 
