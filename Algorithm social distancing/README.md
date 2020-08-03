@@ -17,11 +17,11 @@ Algorithm to create a robot to be placed in the meeting hall, just 5 people in s
 </p>
  
 ## Mechanism of use
-1. When open the app, the app prompt to allow to open the bluetooth and the location.
-2. App reads MAC Addresses around you.
-3. If number people (MAC Addresses) less than or equal 5 you are in safe distance. 
-4. If number people (MAC Addresses) greater than 5 will send alarm to stay away from gathering people.
+* When open the app, the app prompt to allow to open the bluetooth and the location.
+* App reads MAC Addresses around you.
+* If number people (MAC Addresses) less than or equal 5 you are in safe distance. 
+* If number people (MAC Addresses) greater than 5 will send alarm to stay away from gathering people.
 
 ## Stages of work
-1. Buy Bluetooth beacons
-2. Programming the application, If number of people less than or equal 5 you are in safe distance. if greter than 5 will send alarm to user.
+* Buy Bluetooth beacons
+* Programming the application, If number of people less than or equal 5 you are in safe distance. if greter than 5 will send alarm to user.
