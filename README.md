@@ -33,5 +33,4 @@ Install ROS (Robot Operating System).
 A face recognition script that identifies faces in image.
 
 * **Task 11:** [Algorithm social distancing]()</br>
-Algorithm to create a robot to be placed in the meeting hall, just 5 people in same place; Otherwise, the robot will send Alarm to user.
-
+Algorithm that prevents people gathering in the same place.
