@@ -37,3 +37,8 @@ Algorithm that prevents people gathering in the same place.
 
 * **Task 12:** [Servo Motor](https://github.com/ITReema/SmartMethods/tree/master/Servo%20Motor)</br>
 Design two motor of a type Servo motor.
+
+* **Task 13:** [Hand Mold Casting]()</br>
+Design hand mold casting.
+
+
