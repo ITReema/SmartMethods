@@ -1,22 +1,16 @@
 <?php
-$link = mysqli_connect("localhost", "admin", "", "robot_mapping");
- 
-if($link === false){
-    die("ERROR: Could not connect. " . mysqli_connect_error());
+$connection = new mysqli("localhost", "admin", "", "robot_mapping");
+if ($connection->connect_errno) {
+	exit("Database connection failed. reason: " . $connection->connect_error);
 }
 
-$forward = mysqli_real_escape_string($link, $_REQUEST['forward']);
-$right = mysqli_real_escape_string($link, $_REQUEST['right']);
-$left = mysqli_real_escape_string($link, $_REQUEST['left']);
- 
+$forward = $_POST['forward'];
+$left = $_POST['left'];
+$right = $_POST['right'];
 
-$sql = "INSERT INTO directions (forward, move_right, move_left) VALUES ('$forward', '$right', '$left')";
-if(mysqli_query($link, $sql)){
-    echo "Records added successfully.";
-} else{
-    echo "ERROR: Could not able to execute $sql. " . mysqli_error($link);
-}
- 
+$query = "INSERT INTO `directions`(`forward`, `move_left`, `move_right`) VALUES ($forward,$left,$right)";
+
+$connection->query($query);
 header("Location: index.php");
-mysqli_close($link);
+$connection->close();
 ?>

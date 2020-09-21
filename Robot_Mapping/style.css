@@ -11,7 +11,7 @@ body {
 }
 
 .page-title {
-  font-size: 3em;
+  font-size: 6em;
   margin-bottom: 30px;
   color: #14213D;
 }
@@ -30,6 +30,7 @@ body {
 .wrapper > * {
   padding: 2em;
 }
+
 .direction {
   background: #14213D;
 }
@@ -46,6 +47,7 @@ body {
   margin: 5px;
   width: 107px;
   padding-left: 20px;
+  font-size: 16px; 
 
 }
 
@@ -70,31 +72,15 @@ table {
 
 table, th, td {
   border-collapse: collapse;
-  color: #fff;
+  font-size: 16px;
+  color: #14213D;
   padding: 20px;
   text-align: center;
-  border-bottom: 1px solid #fff;
-  width: 150px;    
+  border-bottom: 1px solid #14213D;
+  width: 150px;
 }
 
 th {
   height: 50px;
 }
 
-.draw {
-  background: #E5E5E5;
-}
-
-canvas {
-  margin-top: 20px;
-  margin-right: 10px;
-  margin-left: 10px;
-  background-color: white;
-}
-#DemoCanvas {
-  display: none;
- }
-
- #DemoCanvas.show{
-  display:block; 
-}

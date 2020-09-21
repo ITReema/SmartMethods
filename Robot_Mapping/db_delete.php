@@ -1,20 +1,18 @@
 <?php
-
-$link = mysqli_connect("localhost", "admin", "", "robot_mapping");
- 
-if($link === false){
-    die("ERROR: Could not connect. " . mysqli_connect_error());
+$connection = new mysqli("localhost", "admin", "", "robot_mapping");
+if ($connection->connect_errno) {
+	exit("Database connection failed. reason: " . $connection->connect_error);
 }
  
-$sql = "DELETE FROM directions";
+$query = "DELETE FROM directions";
 
-if(mysqli_query($link, $sql)){
+if(mysqli_query($link, $query)){
     echo "Record was deleted successfully.";
 } else{
     echo "ERROR: Could not able to execute $sql. ";
 }
 
+$connection->query($query);
 header("Location: index.php");
-
-mysqli_close($link);
+$connection->close();
 ?>
