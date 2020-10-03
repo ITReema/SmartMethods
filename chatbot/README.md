@@ -17,7 +17,7 @@ Build simple chatbot with App Inventor.
 * Are you real?
 * Are you still there?
 
-## Screen Shot
+## Screenshots
 <p align="center">
  <img width="300" alt="Screen" src="https://user-images.githubusercontent.com/27751735/86601549-238cd880-bfaa-11ea-958b-6488fee6663b.png">
 </p>
