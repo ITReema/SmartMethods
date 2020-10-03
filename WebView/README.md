@@ -4,7 +4,7 @@ Web view a Robot Control panel on mobile.
 ## Requirement
 * [MIT App Inventor](https://appinventor.mit.edu)
  
- ## Screen Shot 
+ ## Screenshots
 <p align="center">
  <img width="1000" alt="Screen1" src="https://user-images.githubusercontent.com/27751735/85729641-a8056e80-b701-11ea-821c-c8367a76d8ce.png">
 </p>
