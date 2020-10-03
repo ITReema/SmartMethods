@@ -5,7 +5,7 @@ Take the dimensions of the blank part in hand of Dallah and convert it from 2D t
 * [Blender](https://www.blender.org)
 *  Dallah models
 
-## Screen Shot
+## Screenshot
 ![](https://user-images.githubusercontent.com/27751735/89722101-fd65b880-d9ed-11ea-8957-3e8c777e274a.gif)
 
 ## References
