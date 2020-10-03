@@ -48,7 +48,7 @@ $ pip install face_recognition
 $ sudo apt install python3-opencv
 ```
 
-## Screen Shot
+## Screenshot
 ![](https://user-images.githubusercontent.com/27751735/88740251-522f4680-d145-11ea-803f-824186ca5412.png)
 
 ## References
