@@ -6,7 +6,8 @@ Create assistant to the Robot control panel website and export skill as JSON fil
 ## Requirement
 
 * [IBM Watson Assistant](https://www.ibm.com/cloud/watson-assistant/)
-## Screen Shot
+
+## Screenshots
 <img width="1432" alt="ScreenShot1" src="https://user-images.githubusercontent.com/27751735/88231943-b0f44c00-cc7d-11ea-8c9e-396608520994.png">
 
 <img width="1432" alt="ScreenShot2" src="https://user-images.githubusercontent.com/27751735/88231952-b5206980-cc7d-11ea-868f-69f0ad2ad23a.png">
