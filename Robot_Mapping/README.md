@@ -5,7 +5,7 @@ Design Robot Control panel to Robot Mapping with database.
 
 * [XAMPP](https://www.apachefriends.org/download.html)
  
-## Screen Shot
+## Screenshots
 <p align="center">
 <img width="800" alt="Screen Shot" src="https://user-images.githubusercontent.com/27751735/93831208-e667e680-fc7a-11ea-9616-542c70214ace.png">
 </p>
