@@ -15,7 +15,7 @@ Use Bluetooth to calculate the number of MAC addresses, just 5 people in same pl
   <img width="450" alt="flowchart" src="https://user-images.githubusercontent.com/27751735/87877021-8340a600-c9e4-11ea-8f60-b1c786170d34.png">
 </p>
  
-## Screen Shot
+## Screenshots
 
 <p align="center">  
   <img width="300" alt="Screen" src="https://user-images.githubusercontent.com/27751735/87877035-a10e0b00-c9e4-11ea-941b-969c1aae892e.png"><br>
