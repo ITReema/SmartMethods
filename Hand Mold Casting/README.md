@@ -4,7 +4,7 @@ Design hand mold casting.
 ## Requirement
 * [Blender](https://www.blender.org)
 * 3D hand models
-## Screen Shot
+## Screenshot
 ![](https://user-images.githubusercontent.com/27751735/89670058-3831f880-d8e9-11ea-8089-f15fafa8f6a0.gif)
 
 ## References
